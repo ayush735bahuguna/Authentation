@@ -1,0 +1,31 @@
+#Homecontainer {
+    width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    min-width: fit-content;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+#Homeimage {
+    background-color: #80808045;
+    width: calc(100vw - 320px);
+    height: 100vh;
+}
+
+@media screen and (max-width: 653px) {
+    #Homecontainer {
+        width: 100%;
+        min-height: fit-content;
+        overflow: hidden;
+    }
+
+    #Homeimage {
+        display: none;
+    }
+}
